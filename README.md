@@ -2,7 +2,7 @@
 Small code example requested by an employer
 
 Requirements:  
-1. ```apt nstall apache2 php mysql-server php-mysql php-mysqlnd```  
+1. ```apt install apache2 php mysql-server php-mysql php-mysqlnd```  
 2. Copy files to serving directory /var/www/html/  
 3. Create the database and table  
 ```
