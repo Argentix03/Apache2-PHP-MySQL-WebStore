@@ -79,7 +79,7 @@
 		if ($result->num_rows > 0) {
 		  // output data of each row
 		  while($row = $result->fetch_assoc()) {
-		    echo "<div class=\"item\"><div class=\"item-text\">" . $row["pname"]. "<br><br><br>" . $row["pprice"]. '$' . "</div></div>";
+		    echo "<div class=\"item\"><div class=\"item-text\">" . htmlspecialchars($row["pname"]) . "<br><br><br>" . $row["pprice"]. '$' . "</div></div>";
 		  }
 
 		} else {

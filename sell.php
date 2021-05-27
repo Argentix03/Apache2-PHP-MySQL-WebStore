@@ -69,11 +69,11 @@
 				// Query the database (using prepared statement)			
 				$sql = "INSERT INTO products (pname, pprice) VALUES(?, ?)";
 				$stmt = $conn->prepare($sql);
-				$stmt->bind_param('ss', $pname, $pprice);
+				$stmt->bind_param('sd', $pname, $pprice);
 				$stmt->execute();
 				$result = $stmt->get_result();
 				echo "<div class='zero-r'>Product registered successfully</div>";
-			} else {
+			} else { // Got results for the item (already exists)
 				echo "<div class='zero-r'>Product already exists</div>";
 			}
 			
