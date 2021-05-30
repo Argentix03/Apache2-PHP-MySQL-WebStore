@@ -15,6 +15,7 @@ CREATE TABLE products (id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY, pname VARC
 ```  
 4. Create a user and fill in the variables in the PHP Code ($usarname, $password). I have used the following:
 ```
-GRANT INSERT, DELETE, SELECT on store.products TO 'webapp'@'localhost' WITH GRANT OPTIONS;
+CREATE USER 'webapp'@'localhost' IDENTIFIED BY 'Complexity1!'
+GRANT INSERT, DELETE, SELECT on store.products TO 'webapp'@'localhost';
 FLUSH PRIVILEGEs;
 ```
