@@ -1,5 +1,5 @@
 # Apache2-PHP-MySQL-WebStore
-Small code example requested by an employer
+Small minimal code example for a php web stack
 
 Requirements:  
 1. Set up the environment  
